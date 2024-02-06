@@ -1,7 +1,7 @@
 # NextcloudClientADMX
 ADMX File for Nextcloud Desktop Client
 
-The Windows Nextcloud Desktop Client actually supports "pre-seeding" some config values using GPO. This repo aims to provide a usable ADMX file for that.
+The Windows Nextcloud Desktop Client actually supports "pre-seeding" some config values using GPO. This repo aims to (eventually) provide a usable ADMX file for that.
 
 The following settings are currently (as of 3.11.1) supported in the Client:
 
