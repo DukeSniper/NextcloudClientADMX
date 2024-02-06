@@ -1,0 +1,14 @@
+<policyDefinitionResources revision="1.0" schemaVersion="1.0">
+  <displayName>
+  </displayName>
+  <description>
+  </description>
+  <resources>
+    <stringTable>
+      <string id="CAT_E7CF7CD6_EB66_49BE_891B_2666D9A40385">Nextcloud</string>
+      <string id="POL_80E9F01C_861D_4C9F_8B60_AB9DE17F72FD">Skip Update Check</string>
+      <string id="POL_309DF2DA_2730_42A8_B824_699D8D588D33">Confirm sync of external storage</string>
+      <string id="POL_DD398803_5787_4FD4_8903_951045B32BDC">Do not sync folders bigger than 500 MB</string>
+    </stringTable>
+  </resources>
+</policyDefinitionResources>

@@ -1,0 +1,57 @@
+<policyDefinitions revision="1.0" schemaVersion="1.0">
+  <policyNamespaces>
+    <target prefix="fullarmor" namespace="FullArmor.Policies.9BC65179_7031_4F1E_BBF3_2F9EE38BA095" />
+    <using prefix="windows" namespace="Microsoft.Policies.Windows" />
+  </policyNamespaces>
+  <supersededAdm fileName="" />
+  <resources minRequiredRevision="1.0" />
+  <categories>
+    <category name="CAT_E7CF7CD6_EB66_49BE_891B_2666D9A40385" displayName="$(string.CAT_E7CF7CD6_EB66_49BE_891B_2666D9A40385)" />
+  </categories>
+  <policies>
+    <policy name="POL_80E9F01C_861D_4C9F_8B60_AB9DE17F72FD" class="Machine" displayName="$(string.POL_80E9F01C_861D_4C9F_8B60_AB9DE17F72FD)" key="SOFTWARE\Policies\Nextcloud GmbH\Nextcloud" valueName="skipUpdateCheck">
+      <parentCategory ref="CAT_E7CF7CD6_EB66_49BE_891B_2666D9A40385" />
+      <supportedOn ref="windows:SUPPORTED_WindowsVista" />
+	  <enabledValue>
+	    <decimal value="1" />
+	  </enabledValue>
+	  <disabledValue>
+	    <decimal value="0" />
+	  </disabledValue>
+    </policy>
+    <policy name="POL_309DF2DA_2730_42A8_B824_699D8D588D33" class="Machine" displayName="$(string.POL_309DF2DA_2730_42A8_B824_699D8D588D33)" key="SOFTWARE\Policies\Nextcloud GmbH\Nextcloud" valueName="confirnExternalStorage">
+      <parentCategory ref="CAT_E7CF7CD6_EB66_49BE_891B_2666D9A40385" />
+      <supportedOn ref="windows:SUPPORTED_WindowsVista" />
+	  <enabledValue>
+	    <decimal value="1" />
+	  </enabledValue>
+	  <disabledValue>
+	    <decimal value="0" />
+	  </disabledValue>
+    </policy>
+    <policy name="POL_DD398803_5787_4FD4_8903_951045B32BDC" class="Machine" displayName="$(string.POL_DD398803_5787_4FD4_8903_951045B32BDC)" key="SOFTWARE\Policies\Nextcloud GmbH\Nextcloud" valueName="useNewBigFolderSizeLimit">
+      <parentCategory ref="CAT_E7CF7CD6_EB66_49BE_891B_2666D9A40385" />
+      <supportedOn ref="windows:SUPPORTED_WindowsVista" />
+	  <enabledValue>
+	    <decimal value="1" />
+	  </enabledValue>
+	  <disabledValue>
+	    <decimal value="0" />
+	  </disabledValue>
+      <enabledList>
+        <item key="SOFTWARE\Policies\Nextcloud GmbH\Nextcloud" valueName="newBigFolderSizeLimit">
+          <value>
+            <decimal value="500" />
+          </value>
+        </item>
+      </enabledList>
+      <disabledList>
+        <item key="SOFTWARE\Policies\Nextcloud GmbH\Nextcloud" valueName="newBigFolderSizeLimit">
+          <value>
+            <delete />
+          </value>
+        </item>
+      </disabledList>
+    </policy>
+  </policies>
+</policyDefinitions>
